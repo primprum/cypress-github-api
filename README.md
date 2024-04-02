@@ -383,6 +383,12 @@ npm run cy:run
 
 <br>
 
+## Test report
+
+Github pages => https://primprum.github.io/cypress-github-api/
+
+<br>
+
 ## License
 
 This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
