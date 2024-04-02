@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^13.6.1",
+    "multiple-cucumber-html-reporter": "^3.5.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinition": false,
+    "stepDefinitions": "**/stepDef/**/*.js",
+    "json": {
+      "enabled": true,
+      "output": "cypress/support/results.json"
+    }
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --spec \"cypress/e2e/features/*.feature\"",
+    "report": "node cypress.report.js"
+  },
+  "devDependencies": {
+    "cypress-xpath": "latest"
+  }
+}
